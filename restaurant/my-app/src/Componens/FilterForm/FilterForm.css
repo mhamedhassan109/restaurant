@@ -1,0 +1,70 @@
+.FilterForm {
+    padding: 90px 0;
+    background-color: var(--main-color);
+}
+
+.Filtersearch {
+    /* border: 1px solid; */
+    padding: 20px;
+}
+.Filtersearch .searchIcon{
+    transform: translateX(30px);
+    cursor: pointer;
+    
+}
+
+.Filtersearch input {
+    width: 10%;
+    padding: 5px 30px;
+    border-radius: 10px;
+    transition: 1s;
+    border: 1px solid gray;
+    background-color: var(--main-color);
+    
+}
+.Filtersearch input:focus {
+    width: 90%;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+
+.FilterCatogry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+}
+.FilterCatogry button {
+    padding: 5px 18px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: transparent;
+    text-transform: capitalize;
+}
+
+ .sortItem select {
+    width: 150px;
+    height: 40px;
+    background-color: var(--main-color);
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.sortItem select:focus {
+    outline: none;
+}
+
+@media (max-width:768px) {
+   .FilterCatogry {
+    flex-direction: column;
+    margin: 20px 0;
+   
+   }
+   .FilterCatogry button {
+    display: block;
+    width: 90%;
+   }
+}

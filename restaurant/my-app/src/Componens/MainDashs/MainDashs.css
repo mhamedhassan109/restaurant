@@ -1,0 +1,136 @@
+.MainDashs {
+    padding: 150px 0;
+    background-color: var( --main-color);
+}
+.MainDashs .section1 {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.MainDashs .Main {
+    text-align: center;
+   outline: 5px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0px auto;
+    transform: translateY(100px);
+   
+}
+.MainDashs .Main.img1 {
+    transform: translate(121px, 111px)
+}
+.MainDashs .Main.img3 {
+    transform: translate(-96px, 111px);
+}
+.MainDashs .Main.only {
+    width: 200px;
+    height: 200px;
+    transform: translateY(-62px);
+}
+.MainDashs .Main img {
+    max-width: 100%;
+     border-radius: 50%;
+}
+.MainDashs .section2 {
+    margin: 20px auto;
+    text-align: center;
+}
+.MainDashs .imgMain {
+        text-align: center;
+   outline: 5px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0px auto;
+    transform: translateY(100px);
+}
+.MainDashs .imgMain img {
+    max-width: 100%;
+     border-radius: 50%;
+}
+.MainDashs .textMain {
+    padding: 20px;
+}
+.MainDashs .textMain h2{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+.MainDashs .textMain p{
+    line-height: 2;
+    font-size: 18px;
+}
+.MainDashs .textMain button{
+     padding: 13px 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--scound-color);
+  
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+    transition: 0.5s;
+}
+.MainDashs .textMain button:hover {
+    background-color: var(--section-color);
+    transform: scale(1.2);
+}
+.MainDashs .textMain button a {
+    text-decoration: none;
+      color: var( --main-color);
+}
+.MainDashs .catogry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+    flex-direction: row;
+}
+.MainDashs .catogry button {
+    padding: 10px 20px;
+    background-color: var(--section-color);
+    text-transform: capitalize;
+    border-radius: 20px;
+    color: var( --main-color);
+}
+.MainDashs .catogry button:hover {
+    background-color: var(--scound-color);
+    border: none;
+    
+}
+
+
+@media (max-width:992px) {
+    .MainDashs .imgMain{
+        transform: translate(0);
+          
+    }
+    .MainDashs .Main.only {
+        transform: translate(0);
+        width: 150px;
+         height: 150px;
+         margin: 50px auto;
+    }
+    .MainDashs .Main.img1,
+    .MainDashs .Main.img3 {
+        transform: translate(0);
+        display: block;
+    }
+    .MainDashs .Main.img1
+    .MainDashs .section1  {
+        display: flex;
+        flex-direction: column;
+    }
+    .MainDashs .catogry {
+        flex-direction: column;
+    }
+    .MainDashs .catogry button {
+        display: block;
+        width: 100%;
+    }
+}

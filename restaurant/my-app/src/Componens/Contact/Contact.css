@@ -1,0 +1,100 @@
+.Contact {
+    position: relative;
+    background-color: var( --section-color);
+    
+}
+.Contact div {
+
+}
+.Contact video {
+    max-width: 100%;
+    
+    
+}
+.Contact .form {
+    position: absolute;
+    background-color: #1b1c1fcb;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 45%;
+    height: 95%;
+    border-radius: 30px;
+    padding: 20px;
+    color: var( --main-color);
+    text-align: center;
+}
+.Contact .form h2 {
+    margin-bottom: 30px;
+}
+.Contact .form p {
+    line-height: 2;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.Contact .form input {
+    background-color: transparent;
+    border: none;
+     border-bottom: 1px solid var(--main-color);
+     margin-bottom: 30px;
+     margin-right: 20px;
+     padding-bottom: 10px;
+     width: 40%;
+}
+.Contact .form input::placeholder {
+    color: var(--main-color);
+    letter-spacing: 2px;
+}
+.Contact .form input:focus {
+    outline: none;
+     color: var(--main-color);
+}
+.Contact .form textarea {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    border: none;
+       border-bottom: 1px solid var(--main-color);
+       resize: none;
+       margin-bottom: 30px;
+       color: var(--main-color);
+       padding: 0px 25px;
+
+}
+.Contact .form textarea::placeholder {
+    color: var(--main-color);
+     letter-spacing: 2px;
+     padding: 10px;
+}
+.Contact .form textarea:focus {
+    outline: none;
+}
+.Contact .form button {
+    width: 160px;
+    height: 50px;
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.Contact .form button:hover {
+    background-color: var( --scound-color);
+}
+
+
+@media (max-width:992px) {
+.Contact video {
+    display: none;
+}
+.Contact .form {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+}
+}

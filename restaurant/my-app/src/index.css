@@ -1,0 +1,43 @@
+:root {
+  --main-color : #f7f2e2;
+  --scound-color : #ff4135;
+  --section-color:#1b1c1f;
+   
+}
+
+* {
+    box-sizing: border-box;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+

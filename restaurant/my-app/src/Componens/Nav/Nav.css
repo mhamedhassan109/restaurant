@@ -1,0 +1,76 @@
+.navbar {
+    background-color:var(--section-color) !important;
+    
+}
+.navbar a {
+    color: var( --main-color) !important;
+    margin: 0 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 25px 0;
+    text-decoration: none;
+    
+}
+.navbar a:hover {
+    color: var(--scound-color) !important;
+}
+.icon {
+    position: relative;
+    padding: 20px;
+}
+.icon span {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-weight: bold;
+    color: var( --main-color)
+}
+.carticon {
+    color: var( --main-color);
+    font-size: 20px;
+     cursor: pointer;
+       
+}
+.carticon:hover {
+    color: var(--scound-color) ;
+}
+
+.showCart {
+    background-color: var( --section-color);
+    position: fixed;
+    width: 35%;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+     color: white;
+     z-index: 100;
+  
+
+}
+.close {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.close .total{
+    font-weight: bold;
+}
+.close svg {
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+.cart {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+@media (max-width:992px) {
+    .showCart {
+        width: 100%;
+        background-color: #1b1c1ffa;
+      
+    }
+}
