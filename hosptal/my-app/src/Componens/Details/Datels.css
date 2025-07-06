@@ -1,0 +1,160 @@
+.Details {
+    padding: 20px;
+    margin: 100px auto;
+}
+
+.Details .textDeteles h5 {
+    letter-spacing: 3px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.Details .textDeteles h2 {
+     margin-bottom: 30px;
+     font-weight: 700;
+}
+.Details .textDeteles p {
+    line-height: 1.4;
+}
+.Details .textDeteles .iconDeyales i,
+.Details .iconSurgeon i {
+    margin: 10px 15px;
+    font-size: 20px;
+}
+.Details .textDeteles .iconDeyales i:hover,
+.Details .iconSurgeon i:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.Details .surgeon {
+    position: relative;
+}
+.Details .surgeon,
+.Details .service,
+.Details .pediatrician,
+.Details .skills {
+    margin-top: 50px;
+    border-bottom: 2px solid red;
+    padding: 20px;
+   
+}
+.Details .surgeon h4,
+.Details .service h4,
+.Details .pediatrician,
+.Details .skills{
+     letter-spacing: 3px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.Details .surgeon h2,
+.Details .service h2,
+.Details .pediatrician h2,
+.Details .skills h2{
+     margin-bottom: 30px;
+     font-weight: 700;
+     font-size: 40px;
+}
+.Details .surgeon p{
+    line-height: 1.2;
+}
+
+.Details .service .boxService {
+    display: flex;
+    justify-content: space-between;
+    
+  
+}
+.Details .service .boxService h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.Details .service .boxService h3 span i {
+    margin-right: 10px;
+}
+
+ 
+
+.Details .pediatrician .boxPediatrician{
+    display: flex;
+    gap: 20px;
+     margin-bottom: 30px;
+     margin-top: 30px;
+   
+} 
+.Details .pediatrician .boxPediatrician .iconPediatrician{
+    font-size: 45px;
+}
+.Details .pediatrician .boxPediatrician h5{
+    font-weight: 600;
+}
+.Details .pediatrician .boxPediatrician p{
+    max-width: 400px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.Details .skills {
+    border-bottom: none;
+}
+
+.Details .skills .slider {
+    width: 100%;
+    height: 20px;
+    background-color: gray;
+    margin: 40px 0;
+    position: relative;
+    border-radius: 10px;
+    
+}
+.Details .skills .slider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: red;
+    width: 0%;
+    height: 100%;
+    z-index: 2;
+     animation: width 1.5s ease-in-out infinite;
+}
+
+@keyframes width {
+    to{
+        width: var(--width,0%);
+    }
+}
+
+
+.Details .opening {
+    position: fixed;
+    width: 33%;
+    height: 300px;
+    background-color: red;
+    bottom: 25px;
+    right: 3%;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+   
+}
+.Details .opening .iconTime{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.Details .opening h2{
+     margin-bottom: 30px;
+}
+.Details .opening .boxTime{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media (max-width:992px) {
+    .Details .opening {
+        position: static;
+        width: 100%;
+    }
+}
