@@ -1,0 +1,91 @@
+.Story {
+    padding: 30px;
+    background-color: var( --main-color );
+}
+.Story .HeddingStory {
+    text-align: center;
+    margin: 40px 0;
+}
+.Story .HeddingStory h6 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: var(--scound-color);
+}
+.Story .HeddingStory h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+.Story .HeddingStory p {
+    max-width: 700px;
+    margin: 20px auto;
+}
+.Story  .restorantPlace img {
+     border-radius: 20px;
+}
+.Story .storyText {
+    background-color: var( --scound-color);
+    color: var(--main-color);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.Story .storyText h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.Story .storyText p {
+    line-height: 2;
+    color: var(--main-color);
+}
+
+.Story .storyText button {
+    padding: 14px 35px;
+    background-color: var( --section-color);
+    border-radius: 20px;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 20px;
+}
+.Story .storyText button a {
+    text-decoration: none;
+      color: var(--main-color);
+}
+.Story .storyText button:hover  {
+    background-color: var(--main-color);
+    color: var(--section-color);
+}
+.Story .storyText button:hover a {
+    color: var(--section-color);
+}
+.Story .storyphoto {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.Story .storyphoto .story1 {
+    width: 37%;
+    
+}
+.Story .storyphoto .story1 img {
+     border-radius: 20px;
+}
+.Story .storyphoto .story2 {
+    width: 40%;
+     
+}
+.Story .storyphoto .story2 img {
+     border-radius: 20px;
+}
+
+
+@media (max-width:768px) {
+    .Story .HeddingStory h2 {
+    font-size: 30px;
+   
+}
+.Story  .restorantPlace  {
+    margin-bottom: 20px;
+}
+}
