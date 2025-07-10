@@ -1,0 +1,63 @@
+.Menu {
+    background-color: var(--main-color);
+    padding: 20px;
+}
+
+
+.MenuItem .box {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid;
+    margin-bottom: 20px;
+    gap: 30px;
+    border: 1px solid rgb(218, 211, 211);
+    border-radius: 10px;
+}
+
+.MenuItem .box .imgItem {
+  
+    flex-basis: 50%;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.MenuItem .box .imgItem img {
+     border-radius: 10px;
+}
+
+.MenuItem .box .textItem h6 {
+    
+}
+.MenuItem .box .textItem h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.MenuItem .box .textItem p {
+    color: #777;
+}
+.MenuItem .box .textItem h5 {
+    color: var(--scound-color);
+}
+.MenuItem .box .textItem button {
+    margin: 20px 0;
+    padding: 10px 23px;
+    background-color: #1b1c1f;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   
+}
+.MenuItem .box .textItem button:hover {
+    background-color: var(--scound-color);
+    border: 1px solid white;
+}
+
+@media (max-width:768px) {
+    .MenuItem .box {
+        flex-direction: column;
+        text-align: center;
+    }
+}

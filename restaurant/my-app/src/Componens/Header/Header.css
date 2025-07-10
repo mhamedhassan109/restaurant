@@ -1,0 +1,78 @@
+.Header {
+    background-color: var(--section-color);
+    color: white;
+    overflow: hidden;
+}
+.Header .hero {
+  
+    margin: 50px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   gap: 20px;
+   
+}
+.Header .hero .textHero {
+    flex-basis: 75%;
+    padding: 20px;
+    
+}
+.Header .hero .textHero h5{
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: var(--scound-color);
+}
+.Header .hero .textHero h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: mainTitle infinite 0.5s ease-in;
+    
+}
+@keyframes mainTitle {
+    0% {
+        transform: scale(0.97);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.Header .hero .textHero p{
+    max-width: 600px;
+    line-height: 2;
+    margin-bottom: 20px;
+    color: #777;
+}
+.Header .hero .textHero .buttonHero button {
+    padding: 13px 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+   
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+    transition: 1s;
+}
+.Header .hero .textHero .buttonHero button a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+.Header .hero .textHero .buttonHero button:hover {
+    background-color: var( --scound-color);
+}
+.Header .hero .imgHero {
+    transform: translateY(70px);
+}
+
+
+@media (max-width:768px) {
+    .Header .hero  {
+        flex-direction: column;
+        margin: 30px 0
+    }
+}
